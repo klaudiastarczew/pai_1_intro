@@ -22,7 +22,5 @@ Dla programistów w Amazonie istotne jest wprowadzenie łagodnego degradowania (
 
 ## Użycie curl i jq do wypisania nazw super bohaterów z pliku JSON
                 
-curl -s --fail https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json
-| jq '.members[].name'
-
-----
+curl -s --fail https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json \
+    | jq '.members[].name'
